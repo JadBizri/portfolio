@@ -39,7 +39,7 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
     const handleCopy = () => {
         navigator.clipboard.writeText('jad.f.bizri@gmail.com').then(r => {
             setCopied(true)
-            setTimeout(() => setCopied(false), 2000);
+            setTimeout(() => setCopied(false), 3000);
         });
     }
 
