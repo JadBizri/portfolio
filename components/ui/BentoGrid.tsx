@@ -8,7 +8,6 @@ import React, {useState} from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from "@/components/ui/MagicButton";
 import {IoCopyOutline} from "react-icons/io5";
-import {navItems} from "@/data";
 
 export const BentoGrid = ({className, children}: {
     className?: string;
@@ -125,10 +124,10 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
                                             preserveAspectRatio: 'xMidYMid slice',
                                         }
                                     }}
-                                    isStopped={!copied}
+                                    width={400}
+                                    height={200}
                                 />
                             </div>
-
                             <MagicButton title={copied ? 'Email Copied!' : 'Copy my Email'} icon={<IoCopyOutline />} position={'left'} otherClasses='!bg-[#161a31]' handleClick={handleCopy}/>
                         </div>
                     )}
