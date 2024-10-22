@@ -157,7 +157,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
                 .showAtmosphere(defaultProps.showAtmosphere)
                 .atmosphereColor(defaultProps.atmosphereColor)
                 .atmosphereAltitude(defaultProps.atmosphereAltitude)
-                .hexPolygonColor(() => {
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                .hexPolygonColor((e) => {
                     return defaultProps.polygonColor;
                 });
             startAnimation();
@@ -177,13 +178,15 @@ export function Globe({ globeConfig, data }: WorldProps) {
             .arcAltitude((e) => {
                 return (e as { arcAlt: number }).arcAlt * 1;
             })
-            .arcStroke(() => {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            .arcStroke((e) => {
                 return [0.32, 0.28, 0.3][Math.round(Math.random() * 2)];
             })
             .arcDashLength(defaultProps.arcLength)
             .arcDashInitialGap((e) => (e as { order: number }).order * 1)
             .arcDashGap(15)
-            .arcDashAnimateTime(() => defaultProps.arcTime);
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            .arcDashAnimateTime((e) => defaultProps.arcTime);
 
         globeRef.current
             .pointsData(data)
