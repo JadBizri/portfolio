@@ -2,7 +2,6 @@ import React from 'react'
 import {Spotlight} from "@/components/ui/Spotlight";
 import {TextGenerateEffect} from "@/components/ui/TextGenerateEffect";
 import MagicButton from "@/components/ui/MagicButton";
-import {FaLocationArrow} from "react-icons/fa6";
 
 const Hero = () => {
     return (
