@@ -140,6 +140,11 @@ export const projects = [
                 name: 'MongoDB',
                 image: "/mongodb.svg",
             },
+            {
+                id: 6,
+                name: 'Render',
+                image: "/render.svg",
+            },
         ],
         link: "https://vogue-velocity.onrender.com/",
     },
@@ -173,6 +178,11 @@ export const projects = [
                 id: 5,
                 name: 'PostgreSQL',
                 image: "/postgres.svg",
+            },
+            {
+                id: 6,
+                name: 'Render',
+                image: "/render.svg",
             },
         ],
         link: "https://stock-whisperers.onrender.com/",
