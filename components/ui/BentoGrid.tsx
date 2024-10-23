@@ -8,6 +8,8 @@ import React, {useState} from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from "@/components/ui/MagicButton";
 import {IoCopyOutline} from "react-icons/io5";
+import {BackgroundBeams} from "@/components/ui/background-beams";
+import Link from "next/link";
 
 export const BentoGrid = ({className, children}: {
     className?: string;
@@ -57,7 +59,7 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
         >
             <div className={`${id === 6 && 'flex justify-center'} h-full`}>
                 <div className="w-full h-full absolute">
-                    {img && (
+                    {id !== 5 && img && (
                         <img
                             src={img}
                             alt={img}
@@ -88,11 +90,23 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
                         {title}
                     </div>
 
+                    {id === 5 && (
+                        <div className='w-full h-full absolute'>
+                            <Link href='https://drive.google.com/file/d/1znVcLkEB04Y1_jilY8ahd71kty0AZsbp/view?usp=sharing' target='_blank'>
+                                <img
+                                    src={img}
+                                    alt={img}
+                                    className={cn(imgClassName, 'object-cover object-center')}
+                                />
+                            </Link>
+                        </div>
+                    )}
+
                     {id === 2 && <GlobeDemo/>}
 
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                            <div className="flex flex-col gap-3 lg:gap-8">
+                        <div className="flex flex-col gap-3 lg:gap-8">
                                 {['TypeScript', 'Next.js', 'React.js'].map((item => (
                                     <span key={item}
                                           className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]'>
@@ -112,6 +126,8 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
                             </div>
                         </div>
                     )}
+
+                    { id === 5 && <BackgroundBeams/> }
 
                     { id === 6 && (
                         <div className="mt-5 relative">
