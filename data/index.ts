@@ -75,7 +75,38 @@ export const projects = [
         title: "FlipMart - The College Marketplace",
         des: "A UNC Charlotte exclusive buy-and-sell platform designed by students, for students (Only works with @charlotte.edu emails).",
         img: "/project1.png",
-        iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/prisma.svg", "/vercel.svg"],
+        iconLists: [
+            {
+                id: 1,
+                name: 'Next.js',
+                image: "/next.svg",
+            },
+            {
+                id: 2,
+                name: 'React.js',
+                image: "/re.svg",
+            },
+            {
+                id: 3,
+                name: 'Tailwind CSS',
+                image: "/tail.svg",
+            },
+            {
+                id: 4,
+                name: 'TypeScript',
+                image: "/ts.svg",
+            },
+            {
+                id: 5,
+                name: 'Prisma',
+                image: "/prisma.svg",
+            },
+            {
+                id: 6,
+                name: 'Vercel',
+                image: "/vercel.svg",
+            },
+        ],
         link: "https://flipmart-alpha.vercel.app/",
     },
     {
@@ -83,7 +114,33 @@ export const projects = [
         title: "Vogue Velocity - A Clothing Marketplace",
         des: "Your go-to marketplace for buying and selling chic and trendy clothing.",
         img: "/project2.png",
-        iconLists: ["/express.svg", "/js.svg", "/html.svg", "/css.svg","/mongodb.svg"],
+        iconLists: [
+            {
+                id: 1,
+                name: 'Express.js',
+                image: "/express.svg",
+            },
+            {
+                id: 2,
+                name: 'JavaScript',
+                image: "/js.svg",
+            },
+            {
+                id: 3,
+                name: 'HTML',
+                image: "/html.svg",
+            },
+            {
+                id: 4,
+                name: 'CSS',
+                image: "/css.svg",
+            },
+            {
+                id: 5,
+                name: 'MongoDB',
+                image: "/mongodb.svg",
+            },
+        ],
         link: "https://vogue-velocity.onrender.com/",
     },
     {
@@ -91,7 +148,33 @@ export const projects = [
         title: "The Stock Whisperers - For Stock Marketers",
         des: "A social media platform dedicated to stock market enthusiasts. Test it out using username 'Tester' and password 'ABC123456'!",
         img: "/project3.png",
-        iconLists: ["/flask.svg", "/python.svg", "/html.svg", "/css.svg", "/postgres.svg"],
+        iconLists: [
+            {
+                id: 1,
+                name: 'Flask',
+                image: "/flask.svg",
+            },
+            {
+                id: 2,
+                name: 'Python',
+                image: "/python.svg",
+            },
+            {
+                id: 3,
+                name: 'HTML',
+                image: "/html.svg",
+            },
+            {
+                id: 4,
+                name: 'CSS',
+                image: "/css.svg",
+            },
+            {
+                id: 5,
+                name: 'PostgreSQL',
+                image: "/postgres.svg",
+            },
+        ],
         link: "https://stock-whisperers.onrender.com/",
     },
     {
@@ -99,7 +182,43 @@ export const projects = [
         title: "Bookstore Management System - A Demo",
         des: "My first ever full-stack web app made to showcase my skills. Feel free to CRUD (Create, Read, Update & Delete).",
         img: "/project4.png",
-        iconLists: ["/spring-boot.svg", "/java.svg", "/js.svg", "/html.svg", "/css.svg", "/postgres.svg", "/heroku.svg"],
+        iconLists: [
+            {
+                id: 1,
+                name: 'Spring Boot',
+                image: "/spring-boot.svg",
+            },
+            {
+                id: 2,
+                name: 'Java',
+                image: "/java.svg",
+            },
+            {
+                id: 3,
+                name: 'JavaScript',
+                image: "/js.svg",
+            },
+            {
+                id: 4,
+                name: 'HTML',
+                image: "/html.svg",
+            },
+            {
+                id: 5,
+                name: 'CSS',
+                image: "/css.svg",
+            },
+            {
+                id: 6,
+                name: 'PostgreSQL',
+                image: "/postgres.svg",
+            },
+            {
+                id: 7,
+                name: 'Heroku',
+                image: "/heroku.svg",
+            },
+        ],
         link: "https://bookstore-management-system-d2506d07e810.herokuapp.com/",
     },
 ];
