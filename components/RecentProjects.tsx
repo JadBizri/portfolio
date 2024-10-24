@@ -1,7 +1,6 @@
 import React from 'react'
 import {projects} from "@/data";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
-import Link from "next/link";
 import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
 
 const RecentProjects = () => {
