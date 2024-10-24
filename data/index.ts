@@ -1,6 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
+    { name: "Experiences", link: "#experience" },
     { name: "Contact", link: "#contact" }
 ];
 
@@ -235,31 +236,35 @@ export const projects = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "UNC Charlotte - Class of '24",
+        desc: "Completed a Bachelor's in Computer Science with a concentration in software engineering.",
         className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
+        thumbnail: "/grad.png",
+        link: 'https://www.charlotte.edu/'
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp2.svg",
+        title: "Valet - Toyota of North Charlotte (Feb '21 - May '24)",
+        desc: "Balanced part-time work while completing a degree, improving teamwork and problem-solving skills.",
+        className: "md:col-span-2",
+        thumbnail: "/valet.png",
+        link: 'https://www.toyotaofnorthcharlotte.com/'
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
+        title: "Volunteer - Lebanese Red Cross (2018)",
+        desc: "Participated in community services and learned to perform some essential emergency procedures.",
+        className: "md:col-span-2",
+        thumbnail: "/red-cross.png",
+        link: 'https://donate.redcrossredcrescent.org/lb/supportLRC/~my-donation',
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        title: "Mr. Worldwide",
+        desc: "Lived and grew up in Lebanon, Saudi Arabia, and the UAE, adapting to different cultures and environments.",
         className: "md:col-span-2",
-        thumbnail: "/exp4.svg",
+        thumbnail: "/earth.png",
+        link: 'https://againstthecompass.com/en/best-places-visit-middle-east/',
     },
 ];
 

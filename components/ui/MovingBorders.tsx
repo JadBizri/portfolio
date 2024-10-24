@@ -9,35 +9,24 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-export function Button({
-                           borderRadius = "1.75rem",
-                           children,
-                           as: Component = "button",
-                           containerClassName,
-                           borderClassName,
-                           duration,
-                           className,
-                           ...otherProps
-                       }: {
+export function Button({borderRadius = "1.75rem", children, containerClassName, borderClassName, duration, className, link, ...otherProps}: {
     borderRadius?: string;
     children: React.ReactNode;
-    as?: any;
     containerClassName?: string;
     borderClassName?: string;
     duration?: number;
     className?: string;
+    link: string;
     [key: string]: any;
 }) {
     return (
-        <Component
-            className={cn(
-                "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2",
-                containerClassName
-            )}
-            style={{
-                borderRadius: borderRadius,
-            }}
+        <Link
+            href={link}
+            target={'_blank'}
+            className={cn("bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2", containerClassName)}
+            style={{borderRadius: borderRadius,}}
             {...otherProps}
         >
             <div
@@ -53,7 +42,6 @@ export function Button({
                     />
                 </MovingBorder>
             </div>
-
             <div
                 className={cn(
                     "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
@@ -65,7 +53,7 @@ export function Button({
             >
                 {children}
             </div>
-        </Component>
+        </Link>
     );
 }
 
