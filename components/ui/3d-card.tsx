@@ -8,19 +8,17 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+import Link from "next/link";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
 
-export const CardContainer = ({
-  children,
-  className,
-  containerClassName,
-}: {
+export const CardContainer = ({children, className, containerClassName, link}: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  link: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -48,15 +46,7 @@ export const CardContainer = ({
   };
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
-      <div
-        className={cn(
-          "py-10",
-          containerClassName
-        )}
-        style={{
-          perspective: "1000px",
-        }}
-      >
+      <Link href={link} target="_blank" className={cn("py-10", containerClassName)} style={{perspective: "1000px"}}>
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
@@ -72,7 +62,7 @@ export const CardContainer = ({
         >
           {children}
         </div>
-      </div>
+      </Link>
     </MouseEnterContext.Provider>
   );
 };
