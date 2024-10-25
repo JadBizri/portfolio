@@ -260,7 +260,7 @@ export const workExperience = [
     },
     {
         id: 4,
-        title: "Mr. Worldwide",
+        title: "Global Background",
         desc: "Lived and grew up in Lebanon, Saudi Arabia, and the UAE, adapting to different cultures and environments.",
         className: "md:col-span-2",
         thumbnail: "/earth.png",
