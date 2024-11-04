@@ -8,17 +8,15 @@ import React, {
   useRef,
   useEffect,
 } from "react";
-import Link from "next/link";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
 
-export const CardContainer = ({children, className, containerClassName, link}: {
+export const CardContainer = ({children, className, containerClassName}: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
-  link: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -46,31 +44,39 @@ export const CardContainer = ({children, className, containerClassName, link}: {
   };
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
-      <Link href={link} target="_blank" className={cn("py-10", containerClassName)} style={{perspective: "1000px"}}>
-        <div
-          ref={containerRef}
-          onMouseEnter={handleMouseEnter}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
+      <div
           className={cn(
-            "transition-all duration-200 ease-linear",
-            className
+              "py-10",
+              containerClassName
           )}
           style={{
-            transformStyle: "preserve-3d",
+            perspective: "1000px",
           }}
+      >
+        <div
+            ref={containerRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className={cn(
+                "transition-all duration-200 ease-linear",
+                className
+            )}
+            style={{
+              transformStyle: "preserve-3d",
+            }}
         >
           {children}
         </div>
-      </Link>
+      </div>
     </MouseEnterContext.Provider>
   );
 };
 
 export const CardBody = ({
-  children,
-  className,
-}: {
+                           children,
+                           className,
+                         }: {
   children: React.ReactNode;
   className?: string;
 }) => {

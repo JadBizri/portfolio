@@ -2,6 +2,7 @@ import React from 'react'
 import {projects} from "@/data";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
 import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
+import Link from "next/link";
 
 const RecentProjects = () => {
     return (
@@ -12,7 +13,7 @@ const RecentProjects = () => {
             </h1>
             <div className='flex flex-wrap items-stretch justify-center p-4 gap-x-24 gap-y-8 mt-10'>
                 {projects.map(({id, title, des, img, iconLists, link}) => (
-                    <CardContainer link={link} key={id} className="h-full inter-var">
+                    <CardContainer key={id} className="h-full inter-var">
                         <CardBody className="sm:w-[30rem] md:w-[35rem] w-[20rem] h-full flex flex-col justify-between relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black-100 border-white/[0.2] rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
@@ -45,6 +46,9 @@ const RecentProjects = () => {
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
+                                    as={Link}
+                                    href={link}
+                                    target="_blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal text-white"
                                 >
                                     Test it out →
