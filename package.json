@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-hover-card": "^1.1.2",
+    "@radix-ui/react-popover": "^1.1.2",
     "@react-three/drei": "^9.114.6",
     "@react-three/fiber": "^8.17.10",
     "class-variance-authority": "^0.7.0",
