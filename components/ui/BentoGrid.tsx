@@ -10,6 +10,7 @@ import MagicButton from "@/components/ui/MagicButton";
 import {IoCopyOutline} from "react-icons/io5";
 import {BackgroundBeams} from "@/components/ui/background-beams";
 import Link from "next/link";
+import {HoverCardContent, HoverCard, HoverCardTrigger} from "@/components/ui/hover-card";
 
 export const BentoGrid = ({className, children}: {
     className?: string;
@@ -86,8 +87,15 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
                     <div className='font-sans font-extra-light text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10'>
                         {description}
                     </div>
-                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
-                        {title}
+                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-50">
+                        {title} {id === 2 &&
+                        <HoverCard>
+                            <HoverCardTrigger className={'z-50 cursor-pointer text-purple'}>Home</HoverCardTrigger>
+                            <HoverCardContent className={'z-50 text-base'}>
+                                United States, Lebanon, UAE, Saudi Arabia
+                            </HoverCardContent>
+                        </HoverCard>
+                    }
                     </div>
 
                     {id === 5 && (

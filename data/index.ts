@@ -18,7 +18,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "Inspired by Every Place I've Called Home",
+        title: "Inspired by Every Place I've Called",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
