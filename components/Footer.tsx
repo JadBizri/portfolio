@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="w-full pb-10" id='contact'>
             <div className="flex flex-col items-center">
-                <h1 className='heading lg:max-w-[45vw]'>Thank <span className='text-purple'>You</span> for checking out my portfolio!</h1>
+                <h1 className='heading lg:max-w-[45vw]'>Ready to <span className='text-purple'>Collaborate</span>?</h1>
                 <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how my unique blend of skills and background could be a good fit for your needs.</p>
                 <a href='mailto:jad.f.bizri@gmail.com'>
                     <MagicButton title={"Let's get in touch"} icon={<FaLocationArrow/>} position={'right'} />

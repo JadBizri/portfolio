@@ -244,8 +244,8 @@ export const workExperience = [
     },
     {
         id: 2,
-        title: "Valet - Toyota of North Charlotte (Feb '21 - May '24)",
-        desc: "Balanced part-time work while completing a degree, improving teamwork and problem-solving skills.",
+        title: "Service Porter - Toyota of North Charlotte (Feb '21 - May '24)",
+        desc: "Balanced part-time work while completing a degree, improving teamwork and communication skills.",
         className: "md:col-span-2",
         thumbnail: "/valet.png",
         link: 'https://www.toyotaofnorthcharlotte.com/'
@@ -257,14 +257,6 @@ export const workExperience = [
         className: "md:col-span-2",
         thumbnail: "/red-cross.png",
         link: 'https://donate.redcrossredcrescent.org/lb/supportLRC/~my-donation',
-    },
-    {
-        id: 4,
-        title: "Global Background",
-        desc: "Lived and grew up in Lebanon, Saudi Arabia, and the UAE, adapting to different cultures and environments.",
-        className: "md:col-span-2",
-        thumbnail: "/earth.png",
-        link: 'https://againstthecompass.com/en/best-places-visit-middle-east/',
     },
 ];
 
