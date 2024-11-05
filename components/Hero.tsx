@@ -24,7 +24,7 @@ const Hero = () => {
                     <TextGenerateEffect
                         duration={1}
                         className='text-center text-[40px] lg:text-6xl md:text-5xl'
-                        words='👋 Hello, World!'
+                        words='Hello, World!'
                     />
 
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
