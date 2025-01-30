@@ -236,6 +236,14 @@ export const projects = [
 export const workExperience = [
     {
         id: 1,
+        title: "Software Engineer Intern - JustaLab (Jan '25 - )",
+        desc: "Building essential tools to make web3 a more user friendly experience.",
+        className: "md:col-span-2",
+        thumbnail: "/code.png",
+        link: 'https://www.justalab.co/'
+    },
+    {
+        id: 2,
         title: "UNC Charlotte - Class of '24",
         desc: "Completed a Bachelor's in Computer Science with a concentration in software engineering.",
         className: "md:col-span-2",
@@ -243,7 +251,7 @@ export const workExperience = [
         link: 'https://www.charlotte.edu/'
     },
     {
-        id: 2,
+        id: 3,
         title: "Service Porter - Toyota of North Charlotte (Feb '21 - May '24)",
         desc: "Balanced part-time work while completing a degree, improving teamwork and communication skills.",
         className: "md:col-span-2",
@@ -251,7 +259,7 @@ export const workExperience = [
         link: 'https://www.toyotaofnorthcharlotte.com/'
     },
     {
-        id: 3,
+        id: 4,
         title: "Volunteer - Lebanese Red Cross (2018)",
         desc: "Participated in community services and learned to perform some essential emergency procedures.",
         className: "md:col-span-2",
