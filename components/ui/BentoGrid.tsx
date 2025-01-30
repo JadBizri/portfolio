@@ -98,7 +98,7 @@ export const BentoGridItem = ({className, title, description, img, imgClassName,
 
                     {id === 5 && (
                         <div className='w-full h-full absolute'>
-                            <Link href='https://drive.google.com/file/d/1znVcLkEB04Y1_jilY8ahd71kty0AZsbp/view?usp=sharing' target='_blank'>
+                            <Link href='https://drive.google.com/file/d/11eLBOCApNQhRUx8cRRTgYe6VJ_ypq5g6/view?usp=sharing' target='_blank'>
                                 <img
                                     src={img}
                                     alt={img}
